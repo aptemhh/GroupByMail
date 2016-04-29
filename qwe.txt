@@ -1,0 +1,17 @@
+commit 4349a3bb7c98b83170717fdee94e38f666d040d1
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:57:16 2016 +0600
+
+    Отредактировать стиль кода SocketUniversal
+
+commit 2c93f09bcc48af4d02fc1890c21de6284b6335ce
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:57 2016 +0600
+
+    Отредактировать стиль кода Motion
+
+commit ca1f3dc53bfcd5b49552091680c88fafe01beb17
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:45 2016 +0600
+
+    Отредактировать стиль кода GamePanel

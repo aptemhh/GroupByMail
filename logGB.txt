@@ -1,0 +1,209 @@
+commit 4349a3bb7c98b83170717fdee94e38f666d040d1
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:57:16 2016 +0600
+
+    Отредактировать стиль кода SocketUniversal
+
+commit 2c93f09bcc48af4d02fc1890c21de6284b6335ce
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:57 2016 +0600
+
+    Отредактировать стиль кода Motion
+
+commit ca1f3dc53bfcd5b49552091680c88fafe01beb17
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:45 2016 +0600
+
+    Отредактировать стиль кода GamePanel
+
+commit 119a02ad830174ba731e1a1f7423290e78fee202
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:33 2016 +0600
+
+    Отредактировать стиль кода Form1
+
+commit 5b83f4b071bbb8e3d91fa71eb9fd55370a43e6d4
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:24 2016 +0600
+
+    Отредактировать стиль кода DvigWASD
+
+commit 2cc6b3840fa359b0ef8008efcfa33732f8464fef
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:13 2016 +0600
+
+    Отредактировать стиль кода DvigStop
+
+commit fb714b9ba90502940c3f924a0949321f7ee8de00
+Author: Idony <aptemhh@mail.ru>
+Date:   Sun Apr 17 22:56:01 2016 +0600
+
+    Отредактировать стиль кода DvigOnLine
+
+commit 1a1c60201bb12eba4953c6c56376945a92338936
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Apr 13 17:08:10 2016 +0600
+
+    Оптимизация кода в GamePanel
+
+commit 4da845100c49415b11d80964df4b8e1f39de721a
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Apr 13 16:59:07 2016 +0600
+
+    Оптимизировать код в Motion и его наследниках
+
+commit 451f65ec8e715912061e7405847301c19781c87b
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Apr 13 16:45:19 2016 +0600
+
+    Создать динамический label для счета
+    
+    чтобы избавиться от счетчика
+
+commit d9d90e700bb95b3af5c9f174b95e85a2432e7c9e
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Apr 13 16:41:24 2016 +0600
+
+    Оптимизировать инициализацию GamePanel
+
+commit 3ffdc3ad6b10d741c04dab0c0107c4c19fe3f33b
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Apr 13 16:36:36 2016 +0600
+
+    Отредактировать появление новых фишек
+
+commit 2b6d5892ca14916cadfbcdc7f05b3cfcf312df52
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Apr 13 16:06:38 2016 +0600
+
+    Значения фишек сделать по центру
+
+commit 0bbd97c725d1a5b1837d6d749ef24389fe0bd41c
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Apr 13 16:06:09 2016 +0600
+
+    Нулевые фишки сделать пустыми
+
+commit 567508ca0610cc4d3f19ece6674a642bdfd695cb
+Author: Андрей Лобачев <evilmelk@gmail.com>
+Date:   Fri Mar 25 11:47:57 2016 +0600
+
+    Реализовать слияние фишек
+    
+    В классе Motion реализован метод, позволяющий сливать набегающие друг на
+    друга фишки с одинаковым номиналом;
+    В класс DvigWASD добавлен метод, сливающий фишки.
+
+commit 89bf0d71f25c6a932895a3058cd463debfb411ad
+Author: Андрей Лобачев <evilmelk@gmail.com>
+Date:   Fri Mar 25 10:50:15 2016 +0600
+
+    Реализовать перемещение фишек
+    
+    Управление фишками реализовано в классе DvigWASD.
+
+commit c32a271e6e2a0cf675939b536c32f5f0189fdbd4
+Author: Андрей Лобачев <evilmelk@gmail.com>
+Date:   Fri Mar 25 10:34:00 2016 +0600
+
+    Реализовать начало игры и генерацию фишек
+    
+    Реализованы методы GameStart() для создания двух фишек и NewTile() для
+    генерации новых фишек
+
+commit b34de82d949d59754b352e9a012765eed9cbb809
+Author: Idony <aptemhh@mail.ru>
+Date:   Thu Mar 24 01:53:08 2016 +0600
+
+    Подписка для сообщения из таблицы
+
+commit 5d3be5baaed7d07708044affe329526e04d2a542
+Author: Андрей Лобачев <evilmelk@gmail.com>
+Date:   Thu Mar 24 01:25:57 2016 +0600
+
+    Настроить игровое поле
+    
+    - предварительно настроено игровое поле;
+    - изменена реализация создания DataGridView.
+
+commit b185ab18d1e2478a939a7153a2f876bdf2af9a93
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Mar 23 23:25:16 2016 +0600
+
+    Настроить свойства таблицу GamePanel
+
+commit 7dea62d94bd58e0747dafe6ff0b11bc0e69e9e8d
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Mar 9 16:22:48 2016 +0600
+
+    Вывод счета
+
+commit 95a31162b6ffbbf5a6a91d07cbd33511a1f807f5
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Mar 9 16:22:12 2016 +0600
+
+    Добавить на форму наследника DataGridView и вызвать Update в подписках
+
+commit e3ec17e98519f67e415a436ed687a01bae6c4cea
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Mar 9 16:19:45 2016 +0600
+
+    Создать наследника DataGridView с двумя типами Update по сети и по нажатию
+
+commit 57f80a50190ae0367bd6fe618f48016291979a2b
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Mar 9 16:16:58 2016 +0600
+
+    Создать двигатель,который ничего не делает
+
+commit f3b89b10907bf9490e8484fbaff3640d46a75c06
+Author: Idony <aptemhh@mail.ru>
+Date:   Wed Mar 9 16:16:11 2016 +0600
+
+    Создать абстрактный класс Motion и переписать DvigOnLine
+
+commit 6c6e07c1d281a0f91916538c6dd5bab3904c0e2a
+Author: Idony <aptemhh@mail.ru>
+Date:   Tue Mar 8 22:33:11 2016 +0600
+
+    Вытащить подписку на обработку клавиатуры из формы
+
+commit 8e49f30be0f1dbbe86b7f90cda6ff45371ec87f0
+Author: Idony <aptemhh@mail.ru>
+Date:   Mon Mar 7 19:26:33 2016 +0600
+
+    Создать метод статус в Form1 и зарегистрировать на подписку с объектом DvigOnLine метод Set сответственно
+
+commit f68dd8ac63b0c19ceff51eca371b41519b8ae35a
+Author: Idony <aptemhh@mail.ru>
+Date:   Mon Mar 7 19:24:45 2016 +0600
+
+    Создать класс который будет получать значения
+
+commit 4cae5a8f81bc4c5d1e83aaa1a58bb10b0ad82087
+Author: Idony <aptemhh@mail.ru>
+Date:   Mon Mar 7 19:15:05 2016 +0600
+
+    Создать эскиз класса SocketUniversal
+    
+    Класс должен иметь два делигата,чтобы иметь возможность подписываться на
+    вызовы методов статуса и информации об игре, и отдельный метод для
+    запуска в потоке
+
+commit c259e24bb43c7ec463c2fe9373a6993f45e5de8f
+Author: Idony <aptemhh@mail.ru>
+Date:   Mon Mar 7 19:09:21 2016 +0600
+
+    Создать проект c# в VS2012
+
+commit 2d41091e23ecead1f07fd56f6a08f486b9c17169
+Author: Idony <aptemhh@mail.ru>
+Date:   Mon Mar 7 19:08:34 2016 +0600
+
+    Создать репозиторий с gitignore
+
+commit 4bf1d7f7aea4865e0ee227e3d205e8b793e06d99
+Author: Idony <aptemhh@mail.ru>
+Date:   Mon Mar 7 19:05:17 2016 +0600
+
+    :boom::camel: Added .gitattributes & .gitignore files
