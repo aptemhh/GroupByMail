@@ -32,11 +32,11 @@ public class Fact {
         this.nameComit = nameComit;
     }
 
-    public LocalDate getLocalDate() {
-        return localDate;
+    public LocalDateTime getLocalDate() {
+        return localDateTime;
     }
 
-    public void setLocalDate(LocalDate localDate) {
-        this.localDate = localDate;
+    public void setLocalDate(LocalDateTime localDate) {
+        this.localDateTime = localDate;
     }
 }

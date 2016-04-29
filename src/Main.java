@@ -46,10 +46,11 @@ class Divider
         }
         return arrayList;
     }
-    
+
     public EmailAndFact getEmailAndFact(List<String> comit)
     {
 
+        
         return new EmailAndFact("",new Fact(LocalDateTime.parse(comit.get(2).substring(8), formatter),"nameCommit","описание"));
     }
 }
