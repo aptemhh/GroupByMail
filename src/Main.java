@@ -50,7 +50,11 @@ class Divider
     public EmailAndFact getEmailAndFact(List<String> comit)
     {
 
-        
-        return new EmailAndFact("",new Fact(LocalDateTime.parse(comit.get(2).substring(8), formatter),"nameCommit","описание"));
+        String nameCommit=comit.remove(4).substring(4);
+        comit.remove(3);
+        String data=comit.remove(2).substring(8);
+        String infoPerson=comit.remove(1).substring(8);
+
+        return new EmailAndFact("",new Fact(LocalDateTime.parse(data, formatter),nameCommit,));
     }
 }

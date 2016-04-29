@@ -5,11 +5,11 @@ import java.util.List;
  * Created by Idony on 29.04.2016.
  */
 public class EmailAndHistory {
-    String email;
+    InfoPerson infoPerson;
     List<Fact> history;
 
-    public EmailAndHistory(String email) {
-        this.email = email;
+    public EmailAndHistory(InfoPerson infoPerson) {
+        this.infoPerson = infoPerson;
         history=new ArrayList<>();
     }
 

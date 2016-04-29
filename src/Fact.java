@@ -8,19 +8,19 @@ import java.time.format.DateTimeFormatterBuilder;
 public class Fact {
     LocalDateTime localDateTime;
     String nameComit;
-    String description;
+    String[] description;
 
-    public Fact(LocalDateTime localDateTime, String nameComit, String description) {
+    public Fact(LocalDateTime localDateTime, String nameComit, String[] description) {
         this.localDateTime = localDateTime;
         this.nameComit = nameComit;
         this.description = description;
     }
 
-    public String getDescription() {
+    public String[] getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(String[] description) {
         this.description = description;
     }
 
@@ -38,5 +38,14 @@ public class Fact {
 
     public void setLocalDate(LocalDateTime localDate) {
         this.localDateTime = localDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Fact{" +
+                "localDateTime=" + localDateTime +
+                ", nameComit='" + nameComit + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }
