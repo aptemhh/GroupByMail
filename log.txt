@@ -1,0 +1,25 @@
+commit 5bcae6c7b7042ccc65e1ac3d08fd8376412379db
+Author: Idony <aptemhh@mail.ru>
+Date:   Fri Apr 29 19:07:00 2016 +0600
+
+    Сделать парсинг строк
+    
+    Сделать парсинг строкСделать парсинг строк
+
+commit 8e5d0eab527b09de23f90ba52f385c3c284848a8
+Author: Idony <aptemhh@mail.ru>
+Date:   Fri Apr 29 18:51:05 2016 +0600
+
+    тдыатфытадлтфыдатдлыфтадлтыфдтадлыфтадлт фтаыдтыфдатлфтыдатфытвдтфжыатждтыдажтыдтадытадтфыдатдлытдатыдвтадлытдавтждфытвадтыжукцукцукцукцукцу
+
+commit d74cd250f7c077a0ef2e38f8a4fe91af47dedb48
+Author: Idony <aptemhh@mail.ru>
+Date:   Fri Apr 29 18:49:41 2016 +0600
+
+    проверка на длину
+
+commit dd2d5cb6a7cba3151074df81a12d754f0895bfeb
+Author: Idony <aptemhh@mail.ru>
+Date:   Fri Apr 29 14:13:24 2016 +0600
+
+    :boom::camel: Added .gitattributes & .gitignore files

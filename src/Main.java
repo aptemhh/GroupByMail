@@ -1,60 +1,40 @@
-import sun.text.normalizer.UTF16;
-import ua.nio.cs.ext.CP1125;
-
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.stream.Stream;
 
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-        List<String> lines = Files.readAllLines(Paths.get("qwe.txt"), Charset.forName("UTF-8"));
+    public static void main(String[] args)  {
+        Main main=new Main();
+        main.Collector("logCMD.txt").forEach(System.out::println);
+    }
+    public Stream Collector(String path)
+    {
+        List<String> lines = null;
         List<String> comit;
         Divider divider=new Divider();
+        List<EmailAndHistory> emailAndHistoryArrayList=new ArrayList<>();
+        Merge merge=new Merge();
+
+        try {
+            lines = Files.readAllLines(Paths.get(path), Charset.forName("UTF-8"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         for(;(comit=divider.getComit(lines))!=null;)
         {
-            divider.getEmailAndFact(comit);
+            merge.merges(divider.getEmailAndFact(comit),emailAndHistoryArrayList);
         }
+        emailAndHistoryArrayList.sort((emailAndHistory1, t1) -> emailAndHistory1.getInfoPerson().compare(t1.getInfoPerson()));
+        emailAndHistoryArrayList.forEach(s->s.sort());
+        return emailAndHistoryArrayList.stream();
     }
 }
-class Divider
-{
-    int i=0,k;
-    final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss uuuu Z",Locale.UK);
-    public ArrayList<String> getComit(List<String> lines)
-    {
-        k=0;
-        if(i==lines.size())return null;
-        ArrayList<String> arrayList=new ArrayList<>();
-        for(;i<lines.size();i++)
-        {
-            if(Pattern.compile("^commit\\s\\S+$").matcher(lines.get(i)).find())
-               k++;
-            if(k>1)break;
-            arrayList.add(lines.get(i));
-        }
-        return arrayList;
-    }
 
-    public EmailAndFact getEmailAndFact(List<String> comit)
-    {
-
-        String nameCommit=comit.remove(4).substring(4);
-        comit.remove(3);
-        String data=comit.remove(2).substring(8);
-        String infoPerson=comit.remove(1).substring(8);
-
-        return new EmailAndFact("",new Fact(LocalDateTime.parse(data, formatter),nameCommit,));
-    }
-}

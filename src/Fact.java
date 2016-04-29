@@ -1,6 +1,7 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatterBuilder;
+import java.util.Arrays;
 
 /**
  * Created by Idony on 29.04.2016.
@@ -40,12 +41,20 @@ public class Fact {
         this.localDateTime = localDate;
     }
 
+    String s;
+
     @Override
     public String toString() {
-        return "Fact{" +
-                "localDateTime=" + localDateTime +
+        s =  localDateTime.getDayOfMonth()+"/"+localDateTime.getMonth()+"/" +
+                localDateTime.getYear()+" "+localDateTime.getHour()+":"+localDateTime.getMinute()+":" +
+                localDateTime.getSecond()+
                 ", nameComit='" + nameComit + '\'' +
-                ", description='" + description + '\'' +
-                '}';
+                ", description='";
+        if(description!=null)
+        Arrays.stream(description).forEach(e -> s += e);
+        else
+        s+="null";
+        s+="'";
+        return s;
     }
 }
