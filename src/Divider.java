@@ -1,3 +1,4 @@
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -9,7 +10,8 @@ import java.util.regex.Pattern;
 /**
  * Created by Idony on 29.04.2016.
  */
-public class Divider {int i=0,k;
+public class Divider {
+    int i=0,k;
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE MMM d HH:mm:ss uuuu Z", Locale.UK);
     public ArrayList<String> getComit(List<String> lines)
     {

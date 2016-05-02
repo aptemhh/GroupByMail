@@ -40,11 +40,13 @@ public class EmailAndHistory {
     @Override
     public String toString() {
         s = infoPerson.toString()+"\n";
-        history.forEach(e->s+=e.toString()+"\n");
+        for (Fact  fact:history) {
+            s+=fact.toString()+"\n";
+        }
         return  s;
     }
     public void sort()
     {
-        history.sort((fact, t1) -> fact.getLocalDate().compareTo(t1.getLocalDate()));
+        //history.sort((fact, t1) -> fact.getLocalDate().compareTo(t1.getLocalDate()));
     }
 }

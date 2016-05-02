@@ -1,6 +1,5 @@
-import java.time.LocalDate;
+
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatterBuilder;
 import java.util.Arrays;
 
 /**
@@ -16,6 +15,8 @@ public class Fact {
         this.nameComit = nameComit;
         this.description = description;
     }
+
+
 
     public String[] getDescription() {
         return description;
