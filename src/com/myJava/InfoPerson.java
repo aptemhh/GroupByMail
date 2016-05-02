@@ -1,3 +1,5 @@
+package com.myJava;
+
 /**
  * Created by Idony on 29.04.2016.
  */

@@ -1,3 +1,4 @@
+package com.myJava;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -57,5 +58,27 @@ public class Fact {
         s+="null";
         s+="'";
         return s;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Fact fact = (Fact) o;
+
+        if (!localDateTime.equals(fact.localDateTime)) return false;
+        if (!nameComit.equals(fact.nameComit)) return false;
+        // Probably incorrect - comparing Object[] arrays with Arrays.equals
+        return Arrays.equals(description, fact.description);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = localDateTime.hashCode();
+        result = 31 * result + nameComit.hashCode();
+        result = 31 * result + Arrays.hashCode(description);
+        return result;
     }
 }

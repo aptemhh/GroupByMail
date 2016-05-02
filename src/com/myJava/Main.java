@@ -1,3 +1,5 @@
+package com.myJava;
+
 import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -7,10 +9,11 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class Main {
-
-    public static void main(String[] args) throws IOException {
+    StaticExceptions staticExceptions=new StaticExceptions();
+    public static void main(String[] args)  {
         Main main = new Main();
-        main.Collector("logCMD.txt").forEach(System.out::println);
+        main.Collector("logPS.txt").forEach(System.out::println);
+        main.staticExceptions.getExceptions().forEach(System.out::println);
     }
 
     public Stream Collector(String path) {
@@ -36,13 +39,16 @@ public class Main {
             lines = Files.readAllLines(Paths.get(path), Charset.forName("UTF-8"));
 
         } catch (IOException e) {
+            staticExceptions.add("Файл не в кодировке UTF-8");
             try {
                 List<String> lines2 = Files.readAllLines(Paths.get(path), Charset.forName("UTF-16"));
-                for (String s:lines2) {
-                    lines.add(new String(new String(s.getBytes("IBM866")).getBytes(),"UTF-8"));
+                for (String s : lines2) {
+                    lines.add(new String(new String(s.getBytes("IBM866")).getBytes(), "UTF-8"));
                 }
+            } catch (UnsupportedEncodingException e1) {
+                staticExceptions.add("Файл не в кодировке UTF-16");
             } catch (IOException e1) {
-                e1.printStackTrace();
+                staticExceptions.add("Проблемы с файлом! Проверьте существование и доступ к файлу");
             }
         }
         return lines;
